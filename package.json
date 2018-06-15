@@ -14,18 +14,34 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-2": "^6.24.1",
     "jest": "^23.1.0",
     "vue-jest": "^2.6.0",
     "vue-template-compiler": "^2.5.16"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.1",
+    "moment": "^2.22.2",
+    "urljoin": "^0.1.5",
     "vue": "^2.5.16"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx", "vue", "node"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "vue",
+      "node"
+    ],
     "transform": {
       ".+\\.vue": "vue-jest",
       ".+\\.jsx?": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "@/(.*)$": "<rootDir>/src/$1"
     }
   }
 }
